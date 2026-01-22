@@ -1,0 +1,145 @@
+body {
+    overflow-x: hidden;
+    background-color: black;
+    margin: 0;
+    font-family: waldenburger, sans-serif;
+}
+
+
+.content {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    /* display: flex;
+    flex-direction: row; */
+}
+
+
+.left-content {
+    color: white;
+}
+
+
+
+
+
+
+.team-up {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+
+
+
+.team-down {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+    position: relative;
+}
+
+
+.contact-team {
+    /* background-color: yellowgreen; */
+    width: 85%;
+    /* height: 80%; */
+   
+}
+
+
+.logo {
+    width: 8em;
+    margin: 0.5rem 0 2rem 0;
+}
+
+
+h1 {
+    font-family: waldenburger, sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+
+.team-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+
+.points {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+
+.business {
+    /* background-color: pink; */
+    /* height: 50%; */
+    width: 85%;
+    /* padding: 0 1rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+   
+   
+}
+
+
+
+
+
+
+
+
+.trust {
+    opacity: 0.5;
+}  
+
+
+
+
+.company {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 3.2rem 0;
+}
+
+
+
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+
+.company-logo {
+    height: 35px;
+    opacity: 0.9;
+}
+
+
+.stars {
+    display: flex;
+    margin-right: 0.7rem;
+}
+
+
+.star {
+    width: 20px;
+    height: auto
+}
