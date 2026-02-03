@@ -11,3 +11,15 @@
 // ```
 // hello world my name is raman
 // ```
+
+const fs = require("fs");
+
+fs.readFile("file.txt", "utf8", (err, data) => {
+    if (err) throw err;
+    console.log(data);
+    let newdata = data.replace(/\s+/g, " ");
+
+    fs.writeFile("file.txt", newdata, "utf8", (err, data) => {
+        console.log(data);
+    })
+})

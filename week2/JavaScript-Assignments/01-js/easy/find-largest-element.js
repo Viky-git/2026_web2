@@ -6,7 +6,10 @@
 */
 
 function findLargestElement(numbers) {
-
+  let sortedArray = numbers.sort((a, b) => b-a)[0];
+  return sortedArray;
 }
+
+console.log(findLargestElement([15, 27, 8, 12]));
 
 module.exports = findLargestElement;

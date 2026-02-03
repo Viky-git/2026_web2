@@ -9,7 +9,32 @@
 */
 
 function calculateTotalSpentByCategory(transactions) {
-    return [];
+
+    let output = [];
+    let categoryMap = {};
+
+    transactions.forEach(transaction => {
+        const { category, price } = transaction;
+        if (categoryMap[category]) {
+            categoryMap[category] += price;
+        } else {
+            categoryMap[category] = price;
+        }
+    });
+
+
+
+    for (const [category, totalSpent] of Object.entries(categoryMap)) {
+        output.push({ category, totalSpent});
+    }
+
+    return output;
 }
+
+console.log(calculateTotalSpentByCategory([
+    { itemName: "item1", category: "food", price: 20, timestamp: "2023-10-01" },
+    { itemName: "item2", category: "electronics", price: 100, timestamp: "2023-10-02" },
+    { itemName: "item3", category: "food", price: 30, timestamp: "2023-10-03" }
+]));
 
 module.exports = calculateTotalSpentByCategory;
